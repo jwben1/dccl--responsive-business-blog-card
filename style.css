@@ -79,4 +79,61 @@ p, h1, h2, h3, h4, h5, h6 {
 		--fs-24: 24px;
 	}
 
+	body {
+		font-family: var(--ff-lato);
+		color: var(--clr-dark);
+		min-height: 100vh;
+		display: grid;
+		place-content: center;
+	}
 	
+	.card{
+		max-width: 370px;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		border-radius: 1rem;
+		overflow: hidden;
+	}
+
+	.card__body {
+		padding: 0 1em 1em 1em;
+	}
+
+	.card__illustrations {
+		position: relative;
+	}
+
+	.card svg{
+		position: absolute;
+		bottom: -1rem;
+	}
+
+	.card__title {
+		font-family: var(--ff-poppins);
+		font-size: var(--fs-24);
+		margin: .5rem 0;
+	}
+
+	.card__description {
+		color: var(--clr-gray);
+		margin-bottom: 1rem;
+	}
+
+	.flex-group {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem 0;
+		border-top: 2px solid var(--clr-white2);
+	}
+
+	.flex-group img {
+		height: 2.5rem;
+		border-radius: 2rem;
+	}
+
+	.flex-group h2{
+		font-size: var(--fs-16);
+	}
+
+
+
